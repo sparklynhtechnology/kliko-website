@@ -228,6 +228,16 @@
   .steps h3 { font: 700 1.3rem/1.25 var(--display); margin: 0 0 .6rem; }
   .steps p { margin: 0; color: #c3cee4; }
 
+  /* Real-life uses */
+  .use-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.4rem; }
+  .use { padding-left: 1.3rem; border-left: 3px solid var(--signal); }
+  .use:nth-child(2) { border-left-color: #ffb020; }
+  .use-sos { border-left-color: #ff3b4e; }
+  .use svg { width: 2rem; height: 2rem; display: block; margin-bottom: 1rem; }
+  .use h3 { font: 700 1.3rem/1.25 var(--display); margin: 0 0 .6rem; }
+  .use p { margin: 0; color: #c3cee4; }
+  .use .use-hi { margin-top: .8rem; color: var(--text); font-weight: 500; }
+
   /* What you get */
   .gets { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.6rem 4rem; }
   .gets h3 { font: 700 1.2rem var(--display); margin: 0 0 .4rem; display: flex; gap: .7rem; align-items: center; }
@@ -262,7 +272,7 @@
   @media (max-width: 900px) {
     .hero { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 1.5rem; }
     .stage { padding: .5rem 0; }
-    .steps, .gets { grid-template-columns: 1fr; gap: 2.2rem; }
+    .steps, .gets, .use-list { grid-template-columns: 1fr; gap: 2.2rem; }
     .launch-box { grid-template-columns: 1fr; padding: 2rem 1.5rem; }
     .launch .cta-row { justify-content: flex-start; }
     section { padding: 3.8rem 0; }
@@ -352,6 +362,32 @@
         </div>
       </div>
     </div>
+
+    <section class="uses" aria-labelledby="uses-title">
+      <div class="wrap">
+        <h2 id="uses-title">When Kliko saves your day</h2>
+        <ul class="use-list">
+          <li class="use">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#19d3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/><path d="M4 4l16 16"/></svg>
+            <h3>Parked in the wrong spot?</h3>
+            <p>Your car is blocking a gate, another car or sitting in a no-parking zone. Instead of honking, waiting or getting angry, people scan the tag and call you right away.</p>
+            <p class="use-hi">गलत जगह गाड़ी खड़ी है? लोग परेशान नहीं होंगे, सीधे आपको कॉल करेंगे।</p>
+          </li>
+          <li class="use">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffb020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10v18l-2.5-1.5L12 21l-2.5-1.5L7 21z"/><path d="M10 8h4M10 12h4"/></svg>
+            <h3>Move it before the challan</h3>
+            <p>A guard, a neighbour or anyone nearby can tell you to shift your vehicle before it gets towed or fined. A quick call can save you a challan and a trip to the towing yard.</p>
+            <p class="use-hi">टोइंग और चालान से पहले ही आपको खबर मिल जाएगी।</p>
+          </li>
+          <li class="use use-sos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ff3b4e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/><path d="M9.5 12h1.5l1-2 1.5 4 1-2h1"/></svg>
+            <h3>Your family, connected in an emergency</h3>
+            <p>If something happens on the road, anyone at the spot can alert your family with the location in one tap, and call 108 or 112 from the same page.</p>
+            <p class="use-hi">इमरजेंसी में आपकी फैमिली तक तुरंत खबर पहुँचेगी।</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <section>
       <div class="wrap">
